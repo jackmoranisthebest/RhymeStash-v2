@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2697F3481EBA953100BC5EB5 /* RhymeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2697F3471EBA953100BC5EB5 /* RhymeViewController.swift */; };
+		2697F34A1EBA954200BC5EB5 /* BeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2697F3491EBA954200BC5EB5 /* BeatViewController.swift */; };
+		26A1BEA91ECBC07700393D3C /* extraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A1BEA81ECBC07700393D3C /* extraViewController.swift */; };
+		26A8DA8C1ECA1043001F2158 /* wu-tang.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 26A8DA8B1ECA1043001F2158 /* wu-tang.mp3 */; };
+		3F58F38C1EBCDC80009EF23A /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F58F38B1EBCDC80009EF23A /* JSON.swift */; };
+		3F58F38D1EBCDC80009EF23A /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F58F38B1EBCDC80009EF23A /* JSON.swift */; };
+		3F58F38E1EBCDC80009EF23A /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F58F38B1EBCDC80009EF23A /* JSON.swift */; };
+		3F9F26B61EAE5C9D009EA9AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F26B51EAE5C9D009EA9AF /* AppDelegate.swift */; };
+		3F9F26B81EAE5C9D009EA9AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F26B71EAE5C9D009EA9AF /* ViewController.swift */; };
+		3F9F26BB1EAE5C9D009EA9AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9F26B91EAE5C9D009EA9AF /* Main.storyboard */; };
+		3F9F26BD1EAE5C9D009EA9AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F9F26BC1EAE5C9D009EA9AF /* Assets.xcassets */; };
+		3F9F26C01EAE5C9D009EA9AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9F26BE1EAE5C9D009EA9AF /* LaunchScreen.storyboard */; };
+		3F9F26CB1EAE5C9E009EA9AF /* Rhyme_StashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F26CA1EAE5C9E009EA9AF /* Rhyme_StashTests.swift */; };
+		3F9F26D61EAE5C9E009EA9AF /* Rhyme_StashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F26D51EAE5C9E009EA9AF /* Rhyme_StashUITests.swift */; };
+		3FB2F2DC1EC4C7AC0080798D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB2F2DB1EC4C7AC0080798D /* AVFoundation.framework */; };
+		3FB2F2DE1EC4C7B00080798D /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB2F2DD1EC4C7B00080798D /* AVKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F9F26C71EAE5C9E009EA9AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F9F26AA1EAE5C9D009EA9AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F9F26B11EAE5C9D009EA9AF;
+			remoteInfo = Rhyme_Stash;
+		};
+		3F9F26D21EAE5C9E009EA9AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F9F26AA1EAE5C9D009EA9AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3F9F26B11EAE5C9D009EA9AF;
+			remoteInfo = Rhyme_Stash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2697F3471EBA953100BC5EB5 /* RhymeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RhymeViewController.swift; sourceTree = "<group>"; };
+		2697F3491EBA954200BC5EB5 /* BeatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeatViewController.swift; sourceTree = "<group>"; };
+		26A1BEA81ECBC07700393D3C /* extraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extraViewController.swift; sourceTree = "<group>"; };
+		26A8DA8B1ECA1043001F2158 /* wu-tang.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "wu-tang.mp3"; sourceTree = "<group>"; };
+		3F58F38B1EBCDC80009EF23A /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		3F9F26B21EAE5C9D009EA9AF /* Rhyme_Stash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rhyme_Stash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F9F26B51EAE5C9D009EA9AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F9F26B71EAE5C9D009EA9AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F9F26BA1EAE5C9D009EA9AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F9F26BC1EAE5C9D009EA9AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F9F26BF1EAE5C9D009EA9AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3F9F26C11EAE5C9D009EA9AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F9F26C61EAE5C9E009EA9AF /* Rhyme_StashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Rhyme_StashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F9F26CA1EAE5C9E009EA9AF /* Rhyme_StashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rhyme_StashTests.swift; sourceTree = "<group>"; };
+		3F9F26CC1EAE5C9E009EA9AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F9F26D11EAE5C9E009EA9AF /* Rhyme_StashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Rhyme_StashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F9F26D51EAE5C9E009EA9AF /* Rhyme_StashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rhyme_StashUITests.swift; sourceTree = "<group>"; };
+		3F9F26D71EAE5C9E009EA9AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FB2F2DB1EC4C7AC0080798D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3FB2F2DD1EC4C7B00080798D /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F9F26AF1EAE5C9D009EA9AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FB2F2DE1EC4C7B00080798D /* AVKit.framework in Frameworks */,
+				3FB2F2DC1EC4C7AC0080798D /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F9F26C31EAE5C9E009EA9AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F9F26CE1EAE5C9E009EA9AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F9F26A91EAE5C9D009EA9AF = {
+			isa = PBXGroup;
+			children = (
+				3F9F26B41EAE5C9D009EA9AF /* Rhyme_Stash */,
+				3F9F26C91EAE5C9E009EA9AF /* Rhyme_StashTests */,
+				3F9F26D41EAE5C9E009EA9AF /* Rhyme_StashUITests */,
+				3F9F26B31EAE5C9D009EA9AF /* Products */,
+				3FB2F2DA1EC4C7AC0080798D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3F9F26B31EAE5C9D009EA9AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F9F26B21EAE5C9D009EA9AF /* Rhyme_Stash.app */,
+				3F9F26C61EAE5C9E009EA9AF /* Rhyme_StashTests.xctest */,
+				3F9F26D11EAE5C9E009EA9AF /* Rhyme_StashUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F9F26B41EAE5C9D009EA9AF /* Rhyme_Stash */ = {
+			isa = PBXGroup;
+			children = (
+				3F9F26B51EAE5C9D009EA9AF /* AppDelegate.swift */,
+				3F9F26B71EAE5C9D009EA9AF /* ViewController.swift */,
+				26A1BEA81ECBC07700393D3C /* extraViewController.swift */,
+				3F9F26B91EAE5C9D009EA9AF /* Main.storyboard */,
+				3F58F38B1EBCDC80009EF23A /* JSON.swift */,
+				2697F3471EBA953100BC5EB5 /* RhymeViewController.swift */,
+				2697F3491EBA954200BC5EB5 /* BeatViewController.swift */,
+				26A8DA8B1ECA1043001F2158 /* wu-tang.mp3 */,
+				3F9F26BC1EAE5C9D009EA9AF /* Assets.xcassets */,
+				3F9F26BE1EAE5C9D009EA9AF /* LaunchScreen.storyboard */,
+				3F9F26C11EAE5C9D009EA9AF /* Info.plist */,
+			);
+			path = Rhyme_Stash;
+			sourceTree = "<group>";
+		};
+		3F9F26C91EAE5C9E009EA9AF /* Rhyme_StashTests */ = {
+			isa = PBXGroup;
+			children = (
+				3F9F26CA1EAE5C9E009EA9AF /* Rhyme_StashTests.swift */,
+				3F9F26CC1EAE5C9E009EA9AF /* Info.plist */,
+			);
+			path = Rhyme_StashTests;
+			sourceTree = "<group>";
+		};
+		3F9F26D41EAE5C9E009EA9AF /* Rhyme_StashUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3F9F26D51EAE5C9E009EA9AF /* Rhyme_StashUITests.swift */,
+				3F9F26D71EAE5C9E009EA9AF /* Info.plist */,
+			);
+			path = Rhyme_StashUITests;
+			sourceTree = "<group>";
+		};
+		3FB2F2DA1EC4C7AC0080798D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FB2F2DD1EC4C7B00080798D /* AVKit.framework */,
+				3FB2F2DB1EC4C7AC0080798D /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F9F26B11EAE5C9D009EA9AF /* Rhyme_Stash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F9F26DA1EAE5C9E009EA9AF /* Build configuration list for PBXNativeTarget "Rhyme_Stash" */;
+			buildPhases = (
+				3F9F26AE1EAE5C9D009EA9AF /* Sources */,
+				3F9F26AF1EAE5C9D009EA9AF /* Frameworks */,
+				3F9F26B01EAE5C9D009EA9AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rhyme_Stash;
+			productName = Rhyme_Stash;
+			productReference = 3F9F26B21EAE5C9D009EA9AF /* Rhyme_Stash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3F9F26C51EAE5C9E009EA9AF /* Rhyme_StashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F9F26DD1EAE5C9E009EA9AF /* Build configuration list for PBXNativeTarget "Rhyme_StashTests" */;
+			buildPhases = (
+				3F9F26C21EAE5C9E009EA9AF /* Sources */,
+				3F9F26C31EAE5C9E009EA9AF /* Frameworks */,
+				3F9F26C41EAE5C9E009EA9AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F9F26C81EAE5C9E009EA9AF /* PBXTargetDependency */,
+			);
+			name = Rhyme_StashTests;
+			productName = Rhyme_StashTests;
+			productReference = 3F9F26C61EAE5C9E009EA9AF /* Rhyme_StashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3F9F26D01EAE5C9E009EA9AF /* Rhyme_StashUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F9F26E01EAE5C9E009EA9AF /* Build configuration list for PBXNativeTarget "Rhyme_StashUITests" */;
+			buildPhases = (
+				3F9F26CD1EAE5C9E009EA9AF /* Sources */,
+				3F9F26CE1EAE5C9E009EA9AF /* Frameworks */,
+				3F9F26CF1EAE5C9E009EA9AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F9F26D31EAE5C9E009EA9AF /* PBXTargetDependency */,
+			);
+			name = Rhyme_StashUITests;
+			productName = Rhyme_StashUITests;
+			productReference = 3F9F26D11EAE5C9E009EA9AF /* Rhyme_StashUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F9F26AA1EAE5C9D009EA9AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "The Bingo Boiz";
+				TargetAttributes = {
+					3F9F26B11EAE5C9D009EA9AF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5RDP545338;
+						ProvisioningStyle = Automatic;
+					};
+					3F9F26C51EAE5C9E009EA9AF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5RDP545338;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3F9F26B11EAE5C9D009EA9AF;
+					};
+					3F9F26D01EAE5C9E009EA9AF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5RDP545338;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3F9F26B11EAE5C9D009EA9AF;
+					};
+				};
+			};
+			buildConfigurationList = 3F9F26AD1EAE5C9D009EA9AF /* Build configuration list for PBXProject "Rhyme_Stash" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F9F26A91EAE5C9D009EA9AF;
+			productRefGroup = 3F9F26B31EAE5C9D009EA9AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3F9F26B11EAE5C9D009EA9AF /* Rhyme_Stash */,
+				3F9F26C51EAE5C9E009EA9AF /* Rhyme_StashTests */,
+				3F9F26D01EAE5C9E009EA9AF /* Rhyme_StashUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F9F26B01EAE5C9D009EA9AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26A8DA8C1ECA1043001F2158 /* wu-tang.mp3 in Resources */,
+				3F9F26C01EAE5C9D009EA9AF /* LaunchScreen.storyboard in Resources */,
+				3F9F26BD1EAE5C9D009EA9AF /* Assets.xcassets in Resources */,
+				3F9F26BB1EAE5C9D009EA9AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F9F26C41EAE5C9E009EA9AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F9F26CF1EAE5C9E009EA9AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F9F26AE1EAE5C9D009EA9AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2697F3481EBA953100BC5EB5 /* RhymeViewController.swift in Sources */,
+				26A1BEA91ECBC07700393D3C /* extraViewController.swift in Sources */,
+				3F58F38C1EBCDC80009EF23A /* JSON.swift in Sources */,
+				3F9F26B81EAE5C9D009EA9AF /* ViewController.swift in Sources */,
+				2697F34A1EBA954200BC5EB5 /* BeatViewController.swift in Sources */,
+				3F9F26B61EAE5C9D009EA9AF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F9F26C21EAE5C9E009EA9AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F9F26CB1EAE5C9E009EA9AF /* Rhyme_StashTests.swift in Sources */,
+				3F58F38D1EBCDC80009EF23A /* JSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3F9F26CD1EAE5C9E009EA9AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F9F26D61EAE5C9E009EA9AF /* Rhyme_StashUITests.swift in Sources */,
+				3F58F38E1EBCDC80009EF23A /* JSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F9F26C81EAE5C9E009EA9AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F9F26B11EAE5C9D009EA9AF /* Rhyme_Stash */;
+			targetProxy = 3F9F26C71EAE5C9E009EA9AF /* PBXContainerItemProxy */;
+		};
+		3F9F26D31EAE5C9E009EA9AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3F9F26B11EAE5C9D009EA9AF /* Rhyme_Stash */;
+			targetProxy = 3F9F26D21EAE5C9E009EA9AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3F9F26B91EAE5C9D009EA9AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F9F26BA1EAE5C9D009EA9AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3F9F26BE1EAE5C9D009EA9AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F9F26BF1EAE5C9D009EA9AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F9F26D81EAE5C9E009EA9AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3F9F26D91EAE5C9E009EA9AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F9F26DB1EAE5C9E009EA9AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5RDP545338;
+				INFOPLIST_FILE = Rhyme_Stash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Bingoboiz.Rhyme-Stash";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3F9F26DC1EAE5C9E009EA9AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5RDP545338;
+				INFOPLIST_FILE = Rhyme_Stash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Bingoboiz.Rhyme-Stash";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		3F9F26DE1EAE5C9E009EA9AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5RDP545338;
+				INFOPLIST_FILE = Rhyme_StashTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Bingoboiz.Rhyme-StashTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rhyme_Stash.app/Rhyme_Stash";
+			};
+			name = Debug;
+		};
+		3F9F26DF1EAE5C9E009EA9AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5RDP545338;
+				INFOPLIST_FILE = Rhyme_StashTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Bingoboiz.Rhyme-StashTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rhyme_Stash.app/Rhyme_Stash";
+			};
+			name = Release;
+		};
+		3F9F26E11EAE5C9E009EA9AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 5RDP545338;
+				INFOPLIST_FILE = Rhyme_StashUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Bingoboiz.Rhyme-StashUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Rhyme_Stash;
+			};
+			name = Debug;
+		};
+		3F9F26E21EAE5C9E009EA9AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 5RDP545338;
+				INFOPLIST_FILE = Rhyme_StashUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Bingoboiz.Rhyme-StashUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Rhyme_Stash;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F9F26AD1EAE5C9D009EA9AF /* Build configuration list for PBXProject "Rhyme_Stash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F9F26D81EAE5C9E009EA9AF /* Debug */,
+				3F9F26D91EAE5C9E009EA9AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F9F26DA1EAE5C9E009EA9AF /* Build configuration list for PBXNativeTarget "Rhyme_Stash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F9F26DB1EAE5C9E009EA9AF /* Debug */,
+				3F9F26DC1EAE5C9E009EA9AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F9F26DD1EAE5C9E009EA9AF /* Build configuration list for PBXNativeTarget "Rhyme_StashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F9F26DE1EAE5C9E009EA9AF /* Debug */,
+				3F9F26DF1EAE5C9E009EA9AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F9F26E01EAE5C9E009EA9AF /* Build configuration list for PBXNativeTarget "Rhyme_StashUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F9F26E11EAE5C9E009EA9AF /* Debug */,
+				3F9F26E21EAE5C9E009EA9AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F9F26AA1EAE5C9D009EA9AF /* Project object */;
+}

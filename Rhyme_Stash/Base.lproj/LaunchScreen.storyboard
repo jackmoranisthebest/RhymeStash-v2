@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="Rhymestashlogo" translatesAutoresizingMaskIntoConstraints="NO" id="rtz-Xf-hBM">
+                                <rect key="frame" x="73" y="80" width="229" height="345"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Rhyme Stash" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3u-jt-UtK">
+                                <rect key="frame" x="63" y="289" width="249" height="88"/>
+                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Bingo Boiz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nxP-5T-yGp">
+                                <rect key="frame" x="109" y="433" width="157" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rtz-Xf-hBM" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="60" id="5bH-AD-4nq"/>
+                            <constraint firstItem="rtz-Xf-hBM" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="57" id="FRC-Ja-CIK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rtz-Xf-hBM" secondAttribute="trailing" constant="57" id="Oo0-Yt-ZhY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Y3u-jt-UtK" secondAttribute="trailing" constant="47" id="X5X-qQ-xVC"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="nxP-5T-yGp" secondAttribute="bottom" constant="213" id="YQm-Po-DJ8"/>
+                            <constraint firstItem="nxP-5T-yGp" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="93" id="baX-V4-j5x"/>
+                            <constraint firstItem="nxP-5T-yGp" firstAttribute="top" secondItem="rtz-Xf-hBM" secondAttribute="bottom" constant="8" id="bdE-eD-uWK"/>
+                            <constraint firstItem="nxP-5T-yGp" firstAttribute="top" secondItem="rtz-Xf-hBM" secondAttribute="bottom" constant="118" id="gUn-12-8Ov"/>
+                            <constraint firstItem="Y3u-jt-UtK" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="47" id="jXL-Ig-aXk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nxP-5T-yGp" secondAttribute="trailing" constant="93" id="nYw-Jc-KuD"/>
+                            <constraint firstItem="nxP-5T-yGp" firstAttribute="top" secondItem="Y3u-jt-UtK" secondAttribute="bottom" constant="166" id="pzB-nA-BWA"/>
+                            <constraint firstItem="Y3u-jt-UtK" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="269" id="uxV-Ee-opA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Rhymestashlogo" width="103" height="182"/>
+    </resources>
+</document>

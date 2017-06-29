@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="utg-I8-sbm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Rhyme_Stash" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blueFade" translatesAutoresizingMaskIntoConstraints="NO" id="IE7-Nk-wdx">
+                                <rect key="frame" x="-139" y="-101" width="652" height="851"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Word" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lTE-za-uEE">
+                                <rect key="frame" x="138" y="232" width="97" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8e-dZ-Mzr">
+                                <rect key="frame" x="83" y="270" width="209" height="47"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <state key="normal" title="Find Rhymes">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="findRhymez:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eAU-ci-ugh"/>
+                                    <segue destination="UcM-Il-jGe" kind="show" identifier="rhymeSegue1" id="QUp-Ho-bnT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Rhyme Stash" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5h-sq-0bi">
+                                <rect key="frame" x="0.0" y="123" width="375" height="60"/>
+                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Rhymestashlogo" translatesAutoresizingMaskIntoConstraints="NO" id="uwR-rh-Q6k">
+                                <rect key="frame" x="149" y="419" width="74" height="122"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="s8e-dZ-Mzr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5kQ-Di-ohz"/>
+                            <constraint firstItem="uwR-rh-Q6k" firstAttribute="top" secondItem="s8e-dZ-Mzr" secondAttribute="bottom" constant="102" id="ATz-TS-J5X"/>
+                            <constraint firstItem="x5h-sq-0bi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-231.5" id="JoC-fI-OZ4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uwR-rh-Q6k" secondAttribute="trailing" constant="136" id="TZW-Tb-ifQ"/>
+                            <constraint firstItem="x5h-sq-0bi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YuK-ow-xYr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lTE-za-uEE" secondAttribute="trailing" constant="123" id="fmC-sN-pY1"/>
+                            <constraint firstItem="lTE-za-uEE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="123" id="gcZ-t9-RBp"/>
+                            <constraint firstItem="s8e-dZ-Mzr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-40" id="opy-BW-UOc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uwR-rh-Q6k" secondAttribute="bottom" constant="126" id="p62-lc-dDD"/>
+                            <constraint firstItem="uwR-rh-Q6k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="133" id="tJb-pE-wct"/>
+                            <constraint firstItem="s8e-dZ-Mzr" firstAttribute="top" secondItem="lTE-za-uEE" secondAttribute="bottom" constant="8" id="ydB-2l-AcY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="6G4-J5-9uU"/>
+                    <connections>
+                        <outlet property="startingWordText" destination="lTE-za-uEE" id="GPe-K2-14e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1100" y="-228.03598200899552"/>
+        </scene>
+        <!--Rhyme View Controller-->
+        <scene sceneID="Nma-IQ-uIE">
+            <objects>
+                <viewController id="UcM-Il-jGe" customClass="RhymeViewController" customModule="Rhyme_Stash" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="owv-eg-Iq5"/>
+                        <viewControllerLayoutGuide type="bottom" id="gcL-hZ-hEg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zEM-id-Bly">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blueFade" translatesAutoresizingMaskIntoConstraints="NO" id="o5I-7H-oHG">
+                                <rect key="frame" x="-81" y="-99" width="545" height="1512"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9g-4T-zIY">
+                                <rect key="frame" x="16" y="130" width="343" height="59"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="24"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="emJ-Od-9eC" kind="show" identifier="word1" id="Dbb-ZS-U9d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKd-T9-SuG">
+                                <rect key="frame" x="16" y="197" width="343" height="53"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="24"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="emJ-Od-9eC" kind="show" identifier="word2" id="uVt-cX-Ds5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hcz-Jt-Us1">
+                                <rect key="frame" x="16" y="258" width="343" height="54"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="24"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="emJ-Od-9eC" kind="show" identifier="word3" id="Lq1-2u-UeH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zen-gs-IKN">
+                                <rect key="frame" x="16" y="320" width="343" height="54"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="24"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="emJ-Od-9eC" kind="show" identifier="word4" id="859-mM-z4d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YuR-Ty-Vqy">
+                                <rect key="frame" x="16" y="382" width="343" height="54"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="24"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="emJ-Od-9eC" kind="show" identifier="word5" id="UEG-LN-Ehp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ImV-Kr-BVg">
+                                <rect key="frame" x="23.5" y="542.5" width="80" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <state key="normal" title="Play Beat">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playBeat:" destination="UcM-Il-jGe" eventType="touchUpInside" id="MLN-0h-62k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LJ8-dp-5LM">
+                                <rect key="frame" x="266" y="544" width="93" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <state key="normal" title="Stop Beat">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopBeat:" destination="UcM-Il-jGe" eventType="touchUpInside" id="u8I-7o-3GS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2e-Lu-x7y">
+                                <rect key="frame" x="153.5" y="484.5" width="67" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <state key="normal" title="Refresh">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="refreshSuggestions:" destination="UcM-Il-jGe" eventType="touchUpInside" id="MlV-0C-RMS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LJ8-dp-5LM" firstAttribute="centerY" secondItem="zEM-id-Bly" secondAttribute="centerY" constant="225.5" id="0Zj-RZ-wVe"/>
+                            <constraint firstItem="Hcz-Jt-Us1" firstAttribute="centerY" secondItem="zEM-id-Bly" secondAttribute="centerY" constant="-48.5" id="JBp-vE-zko"/>
+                            <constraint firstItem="zen-gs-IKN" firstAttribute="centerY" secondItem="zEM-id-Bly" secondAttribute="centerY" constant="13.5" id="Vxi-2e-sXL"/>
+                            <constraint firstItem="sKd-T9-SuG" firstAttribute="centerY" secondItem="zEM-id-Bly" secondAttribute="centerY" constant="-110" id="YDp-Vd-eZp"/>
+                            <constraint firstItem="sKd-T9-SuG" firstAttribute="centerX" secondItem="zEM-id-Bly" secondAttribute="centerX" id="aui-Cq-Xon"/>
+                            <constraint firstItem="YuR-Ty-Vqy" firstAttribute="centerX" secondItem="zEM-id-Bly" secondAttribute="centerX" id="bG1-UF-VvC"/>
+                            <constraint firstItem="d2e-Lu-x7y" firstAttribute="centerY" secondItem="zEM-id-Bly" secondAttribute="centerY" constant="167.5" id="fvh-DP-B3K"/>
+                            <constraint firstItem="Hcz-Jt-Us1" firstAttribute="centerX" secondItem="zEM-id-Bly" secondAttribute="centerX" id="h2O-3f-gYw"/>
+                            <constraint firstItem="d2e-Lu-x7y" firstAttribute="centerX" secondItem="zEM-id-Bly" secondAttribute="centerX" id="l3w-Cf-IMl"/>
+                            <constraint firstItem="ImV-Kr-BVg" firstAttribute="centerY" secondItem="zEM-id-Bly" secondAttribute="centerY" constant="225.5" id="maZ-Qz-bxx"/>
+                            <constraint firstItem="LJ8-dp-5LM" firstAttribute="centerX" secondItem="zEM-id-Bly" secondAttribute="centerX" constant="125" id="mem-5e-7cH"/>
+                            <constraint firstItem="ImV-Kr-BVg" firstAttribute="centerX" secondItem="zEM-id-Bly" secondAttribute="centerX" constant="-124" id="mvW-oh-l62"/>
+                            <constraint firstItem="s9g-4T-zIY" firstAttribute="centerY" secondItem="zEM-id-Bly" secondAttribute="centerY" constant="-174" id="nNl-i5-H8i"/>
+                            <constraint firstItem="s9g-4T-zIY" firstAttribute="centerX" secondItem="zEM-id-Bly" secondAttribute="centerX" id="pmb-Ea-Obp"/>
+                            <constraint firstItem="zen-gs-IKN" firstAttribute="centerX" secondItem="zEM-id-Bly" secondAttribute="centerX" id="vo4-NY-3Hm"/>
+                            <constraint firstItem="YuR-Ty-Vqy" firstAttribute="centerY" secondItem="zEM-id-Bly" secondAttribute="centerY" constant="75.5" id="zdM-yl-fAJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="RhymeFour" destination="YuR-Ty-Vqy" id="jJ8-LJ-KzX"/>
+                        <outlet property="RhymeOne" destination="sKd-T9-SuG" id="Gtt-dY-kX8"/>
+                        <outlet property="RhymeThree" destination="zen-gs-IKN" id="XSv-pe-Pq4"/>
+                        <outlet property="RhymeTwo" destination="Hcz-Jt-Us1" id="ARq-Mj-aNb"/>
+                        <outlet property="RhymeZero" destination="s9g-4T-zIY" id="hcS-sV-vWk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mdz-kY-aeZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1821.5999999999999" y="-228.03598200899552"/>
+        </scene>
+        <!--Extra View Controller-->
+        <scene sceneID="nFT-04-AGN">
+            <objects>
+                <viewController id="emJ-Od-9eC" customClass="extraViewController" customModule="Rhyme_Stash" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N7K-JA-eyc"/>
+                        <viewControllerLayoutGuide type="bottom" id="mhs-h7-zZa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cM4-5P-reK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blueFade" translatesAutoresizingMaskIntoConstraints="NO" id="LCj-33-cUD">
+                                <rect key="frame" x="-104" y="-180" width="578" height="1135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ku-ns-TdZ">
+                                <rect key="frame" x="216" y="273" width="143" height="21"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggV-fe-6s7">
+                                <rect key="frame" x="216" y="423" width="143" height="21"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Ch-EG-HtM">
+                                <rect key="frame" x="216" y="373" width="143" height="21"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gji-sC-5zl">
+                                <rect key="frame" x="216" y="323" width="143" height="21"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XsU-k3-Vmc">
+                                <rect key="frame" x="16" y="273" width="143" height="21"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smg-RH-mht">
+                                <rect key="frame" x="16" y="323" width="143" height="21"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EhK-un-WfV">
+                                <rect key="frame" x="16" y="373" width="143" height="21"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPh-bi-glg">
+                                <rect key="frame" x="16" y="417" width="143" height="32"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5a-Rf-ChY">
+                                <rect key="frame" x="16" y="222" width="143" height="21"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Bq-V4-OUs">
+                                <rect key="frame" x="216" y="222" width="143" height="21"/>
+                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Related Words" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uU-1H-oL5">
+                                <rect key="frame" x="73" y="117" width="228" height="44.5"/>
+                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="smg-RH-mht" firstAttribute="centerX" secondItem="cM4-5P-reK" secondAttribute="centerX" constant="-100" id="19J-wH-0RP"/>
+                            <constraint firstItem="XsU-k3-Vmc" firstAttribute="centerY" secondItem="cM4-5P-reK" secondAttribute="centerY" constant="-50" id="1kW-Wr-fCC"/>
+                            <constraint firstItem="WPh-bi-glg" firstAttribute="centerY" secondItem="cM4-5P-reK" secondAttribute="centerY" constant="99.5" id="6Yd-t4-c87"/>
+                            <constraint firstItem="ggV-fe-6s7" firstAttribute="centerX" secondItem="cM4-5P-reK" secondAttribute="centerX" constant="100" id="8lP-Vd-MP7"/>
+                            <constraint firstItem="WPh-bi-glg" firstAttribute="centerX" secondItem="cM4-5P-reK" secondAttribute="centerX" constant="-100" id="APP-fg-xf7"/>
+                            <constraint firstItem="gji-sC-5zl" firstAttribute="centerX" secondItem="cM4-5P-reK" secondAttribute="centerX" constant="100" id="Afd-2o-gsK"/>
+                            <constraint firstItem="smg-RH-mht" firstAttribute="centerY" secondItem="cM4-5P-reK" secondAttribute="centerY" id="BTv-K6-VYt"/>
+                            <constraint firstItem="EhK-un-WfV" firstAttribute="centerY" secondItem="cM4-5P-reK" secondAttribute="centerY" constant="50" id="Br1-1l-Du9"/>
+                            <constraint firstItem="gji-sC-5zl" firstAttribute="centerY" secondItem="cM4-5P-reK" secondAttribute="centerY" id="CbC-ic-RPb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8uU-1H-oL5" secondAttribute="trailing" constant="58" id="Hop-yd-xbH"/>
+                            <constraint firstItem="2Bq-V4-OUs" firstAttribute="top" secondItem="8uU-1H-oL5" secondAttribute="bottom" constant="59" id="MG6-MP-PSu"/>
+                            <constraint firstItem="8uU-1H-oL5" firstAttribute="leading" secondItem="cM4-5P-reK" secondAttribute="leadingMargin" constant="57" id="MHO-2y-QKs"/>
+                            <constraint firstItem="1Ch-EG-HtM" firstAttribute="centerY" secondItem="cM4-5P-reK" secondAttribute="centerY" constant="50" id="NWF-ev-UbI"/>
+                            <constraint firstItem="XsU-k3-Vmc" firstAttribute="centerX" secondItem="cM4-5P-reK" secondAttribute="centerX" constant="-100" id="TTF-LL-iYw"/>
+                            <constraint firstItem="8uU-1H-oL5" firstAttribute="top" secondItem="N7K-JA-eyc" secondAttribute="bottom" constant="53" id="Tok-Wx-cea"/>
+                            <constraint firstItem="s5a-Rf-ChY" firstAttribute="centerX" secondItem="cM4-5P-reK" secondAttribute="centerX" constant="-100" id="Unr-eG-5Wa"/>
+                            <constraint firstItem="s5a-Rf-ChY" firstAttribute="centerY" secondItem="cM4-5P-reK" secondAttribute="centerY" constant="-101" id="WUk-QT-YeG"/>
+                            <constraint firstItem="EhK-un-WfV" firstAttribute="centerX" secondItem="cM4-5P-reK" secondAttribute="centerX" constant="-100" id="dYu-Cv-lIt"/>
+                            <constraint firstItem="4Ku-ns-TdZ" firstAttribute="centerY" secondItem="cM4-5P-reK" secondAttribute="centerY" constant="-50" id="ew6-CU-Zv8"/>
+                            <constraint firstItem="4Ku-ns-TdZ" firstAttribute="centerX" secondItem="cM4-5P-reK" secondAttribute="centerX" constant="100" id="lKK-fQ-KM9"/>
+                            <constraint firstItem="ggV-fe-6s7" firstAttribute="centerY" secondItem="cM4-5P-reK" secondAttribute="centerY" constant="100" id="p8J-sf-lCy"/>
+                            <constraint firstItem="2Bq-V4-OUs" firstAttribute="centerX" secondItem="cM4-5P-reK" secondAttribute="centerX" constant="100" id="qI6-KD-viV"/>
+                            <constraint firstItem="2Bq-V4-OUs" firstAttribute="centerY" secondItem="cM4-5P-reK" secondAttribute="centerY" constant="-101" id="v6X-A7-8Di"/>
+                            <constraint firstItem="1Ch-EG-HtM" firstAttribute="centerX" secondItem="cM4-5P-reK" secondAttribute="centerX" constant="100" id="wwA-uw-kCD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="r1" destination="s5a-Rf-ChY" id="yqL-gq-7Qq"/>
+                        <outlet property="r10" destination="ggV-fe-6s7" id="IAc-35-pas"/>
+                        <outlet property="r2" destination="XsU-k3-Vmc" id="vs7-qo-e7e"/>
+                        <outlet property="r3" destination="smg-RH-mht" id="5UV-pB-Dah"/>
+                        <outlet property="r4" destination="EhK-un-WfV" id="QO0-OU-PgI"/>
+                        <outlet property="r5" destination="WPh-bi-glg" id="PZG-5c-GWv"/>
+                        <outlet property="r6" destination="2Bq-V4-OUs" id="BHr-6N-92O"/>
+                        <outlet property="r7" destination="4Ku-ns-TdZ" id="EDc-Th-Qh4"/>
+                        <outlet property="r8" destination="gji-sC-5zl" id="W99-Xa-kTa"/>
+                        <outlet property="r9" destination="1Ch-EG-HtM" id="Exn-NW-ikM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NaF-re-XAp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2567.1999999999998" y="-226.23688155922042"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2wt-C8-bnX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="utg-I8-sbm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Id-nQ-frg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="4ll-ya-xrv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vd1-Yd-iCn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104.8" y="131.78410794602701"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Rhymestashlogo" width="103" height="182"/>
+        <image name="blueFade" width="652" height="652"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Lq1-2u-UeH"/>
+    </inferredMetricsTieBreakers>
+</document>
