@@ -23,6 +23,9 @@
 		3F9F26D61EAE5C9E009EA9AF /* Rhyme_StashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9F26D51EAE5C9E009EA9AF /* Rhyme_StashUITests.swift */; };
 		3FB2F2DC1EC4C7AC0080798D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB2F2DB1EC4C7AC0080798D /* AVFoundation.framework */; };
 		3FB2F2DE1EC4C7B00080798D /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB2F2DD1EC4C7B00080798D /* AVKit.framework */; };
+		916DD4271F04EDCE00169993 /* N!CE_Tag.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 916DD4261F04EDCE00169993 /* N!CE_Tag.TTF */; };
+		916DD4291F04EDDD00169993 /* Painting in the Sunlight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 916DD4281F04EDDD00169993 /* Painting in the Sunlight.ttf */; };
+		916DD42B1F04EDED00169993 /* amsterdam.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 916DD42A1F04EDED00169993 /* amsterdam.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		3F9F26D71EAE5C9E009EA9AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FB2F2DB1EC4C7AC0080798D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3FB2F2DD1EC4C7B00080798D /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		916DD4261F04EDCE00169993 /* N!CE_Tag.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = "N!CE_Tag.TTF"; sourceTree = "<group>"; };
+		916DD4281F04EDDD00169993 /* Painting in the Sunlight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Painting in the Sunlight.ttf"; sourceTree = "<group>"; };
+		916DD42A1F04EDED00169993 /* amsterdam.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = amsterdam.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,9 @@
 		3F9F26A91EAE5C9D009EA9AF = {
 			isa = PBXGroup;
 			children = (
+				916DD42A1F04EDED00169993 /* amsterdam.ttf */,
+				916DD4281F04EDDD00169993 /* Painting in the Sunlight.ttf */,
+				916DD4261F04EDCE00169993 /* N!CE_Tag.TTF */,
 				3F9F26B41EAE5C9D009EA9AF /* Rhyme_Stash */,
 				3F9F26C91EAE5C9E009EA9AF /* Rhyme_StashTests */,
 				3F9F26D41EAE5C9E009EA9AF /* Rhyme_StashUITests */,
@@ -268,6 +277,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				916DD42B1F04EDED00169993 /* amsterdam.ttf in Resources */,
+				916DD4291F04EDDD00169993 /* Painting in the Sunlight.ttf in Resources */,
+				916DD4271F04EDCE00169993 /* N!CE_Tag.TTF in Resources */,
 				26A8DA8C1ECA1043001F2158 /* wu-tang.mp3 in Resources */,
 				3F9F26C01EAE5C9D009EA9AF /* LaunchScreen.storyboard in Resources */,
 				3F9F26BD1EAE5C9D009EA9AF /* Assets.xcassets in Resources */,

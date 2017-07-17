@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="utg-I8-sbm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="utg-I8-sbm">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Painting in the Sunlight.ttf">
+            <string>Painting-in-the-Sunlight</string>
+        </array>
+        <array key="amsterdam.ttf">
+            <string>AmsterdamGraffiti</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -26,13 +34,13 @@
                                 <rect key="frame" x="-139" y="-101" width="652" height="851"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Word" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lTE-za-uEE">
-                                <rect key="frame" x="138" y="232" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Word" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lTE-za-uEE">
+                                <rect key="frame" x="139" y="232" width="97" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8e-dZ-Mzr">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8e-dZ-Mzr">
                                 <rect key="frame" x="83" y="270" width="209" height="47"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
                                 <state key="normal" title="Find Rhymes">
@@ -43,28 +51,30 @@
                                     <segue destination="UcM-Il-jGe" kind="show" identifier="rhymeSegue1" id="QUp-Ho-bnT"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Rhyme Stash" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5h-sq-0bi">
-                                <rect key="frame" x="0.0" y="123" width="375" height="60"/>
-                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="36"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Rhymestashlogo" translatesAutoresizingMaskIntoConstraints="NO" id="uwR-rh-Q6k">
+                                <rect key="frame" x="149" y="419" width="74" height="122"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Rhyme Stash" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5h-sq-0bi">
+                                <rect key="frame" x="0.0" y="97" width="375" height="60"/>
+                                <fontDescription key="fontDescription" name="AmsterdamGraffiti" family="Amsterdam Graffiti" pointSize="70"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Rhymestashlogo" translatesAutoresizingMaskIntoConstraints="NO" id="uwR-rh-Q6k">
-                                <rect key="frame" x="149" y="419" width="74" height="122"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="lTE-za-uEE" firstAttribute="top" secondItem="x5h-sq-0bi" secondAttribute="bottom" constant="75" id="0LY-FS-e5v"/>
+                            <constraint firstItem="x5h-sq-0bi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="2cV-nZ-1Zh"/>
                             <constraint firstItem="s8e-dZ-Mzr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5kQ-Di-ohz"/>
+                            <constraint firstAttribute="trailing" secondItem="x5h-sq-0bi" secondAttribute="trailing" id="5we-Ss-JaG"/>
                             <constraint firstItem="uwR-rh-Q6k" firstAttribute="top" secondItem="s8e-dZ-Mzr" secondAttribute="bottom" constant="102" id="ATz-TS-J5X"/>
-                            <constraint firstItem="x5h-sq-0bi" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-231.5" id="JoC-fI-OZ4"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uwR-rh-Q6k" secondAttribute="trailing" constant="136" id="TZW-Tb-ifQ"/>
-                            <constraint firstItem="x5h-sq-0bi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YuK-ow-xYr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lTE-za-uEE" secondAttribute="trailing" constant="123" id="fmC-sN-pY1"/>
                             <constraint firstItem="lTE-za-uEE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="123" id="gcZ-t9-RBp"/>
                             <constraint firstItem="s8e-dZ-Mzr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-40" id="opy-BW-UOc"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uwR-rh-Q6k" secondAttribute="bottom" constant="126" id="p62-lc-dDD"/>
                             <constraint firstItem="uwR-rh-Q6k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="133" id="tJb-pE-wct"/>
+                            <constraint firstItem="x5h-sq-0bi" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="tnv-yi-D19"/>
                             <constraint firstItem="s8e-dZ-Mzr" firstAttribute="top" secondItem="lTE-za-uEE" secondAttribute="bottom" constant="8" id="ydB-2l-AcY"/>
                         </constraints>
                     </view>
@@ -289,7 +299,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Related Words" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uU-1H-oL5">
                                 <rect key="frame" x="73" y="117" width="228" height="44.5"/>
-                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="26"/>
+                                <fontDescription key="fontDescription" name="Painting-in-the-Sunlight" family="Painting in the Sunlight" pointSize="63"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -344,7 +354,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="utg-I8-sbm" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Id-nQ-frg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="5Id-nQ-frg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
